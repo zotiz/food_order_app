@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Category</title>
+  <style>
+    table,td,tr{
+      border:none;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>  <!-- Add Header Section -->
+    <h1>Add Category</h1>
+  </header>
+  
+  <hr> <!-- horizontal line -->
+  
+  <main> <!-- add main Section -->
+    <!-- add Form -->
+    <form action="" method = 'GET'>
+      <!-- add table -->
+            <table width="400" height='400'>
+              <!-- table row -->
+              <tr>
+                <!-- table data -->
+                <td>
+                  <label for="category_name">Category Name:</label>
+                </td>
+                <td>
+                  <input type="text" id="category_name" name="category_name"
+                  required> 
+                </td>
+              </tr>
+              <!-- table row -->
+              <tr>
+                <td>
+                  <label for="category_desc">Category Description:</label>
+                </td>
+                <td>
+                  <textarea  id="category_desc" name="category_description" rows="4" cols="16"></textarea>
+                </td>
+              </tr>
+              <!-- table row -->
+              <tr>
+                <td><label for="active">Is Active</label></td>
+                <td><input type="checkbox" id="active"></td>
+              </tr>
+              <!-- table row -->
+              <tr>
+                <td><label for="img">Image URL:</label></td>
+                <td><input type="url" id="img" name="image"></td>
+              </tr>
+              <!-- table row -->
+              <tr>
+                <td><button type="reset" >Discard</button></td>
+                <td><button type="submit">Save</button></td>
+              </tr>
+            </table>
+    </form>
+  </main>
+  <!-- footer -->
+  <footer>
+    <a href="admin_page.html">go back to admin page</a>
+  </footer>
+</body>
+</html>

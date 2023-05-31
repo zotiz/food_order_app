@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Restaurant</title>
+  <style>
+    table,td,tr{
+      border:none;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>  <!-- Add Header Section -->
+    <h1>Add Restaurant</h1>
+  </header>
+  
+  <hr>  <!-- horizontal line -->
+  
+  <main>  <!-- add Main Section -->
+    
+    <form action="" method="get">  <!-- add Form -->
+            <table  width="400" height='400'>
+              
+              <tr> <!-- table row -->
+                <td> <!-- table data -->
+                  <label for="restaurant_name">Restaurant Name:</label>
+                </td>
+                <td>
+                  <input type="text" id="restaurant_name" name="restaurant_name"
+                  required> 
+                </td>
+              </tr>
+
+              <tr>  <!-- table row -->
+                <td> <!-- table data -->
+                  <label for="restaurant_address">Restaurant Address:</label>
+                </td>
+                <td>
+                  <textarea  id="restaurant_address" name="restaurant_address" rows="4" cols="16"></textarea>
+                </td>
+              </tr>
+
+              <tr> <!-- table row -->
+                <td><label for="contact">Contact No:</label></td> <!-- table data -->
+                <td><input type="tel" id="contact" name="contact" required></td>
+              </tr>
+
+              <tr> <!-- table row -->
+                <td> <label for="img">Restaurant Image:</label></td> <!-- table data -->
+                <td><input type="file" id="img" name="image"></td>
+              </tr>
+
+              <tr> <!-- table row -->
+                <!-- button  -->
+                <td><button type="reset" >Discard</button></td> 
+                <td><button type="submit">Save</button></td>
+              </tr>
+            </table>
+    </form>
+  </main>
+  <footer>
+    <a href="admin_page.html">go back to admin page</a>
+  </footer>
+</body>
+</html>

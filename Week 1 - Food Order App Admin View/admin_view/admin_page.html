@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <style>
+    tr,td,th{
+      
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header> <!-- add header -->
+    <h1>Admin Dashboard</h1>
+  </header>
+  
+  <hr> <!-- horizontal line-->
+
+  <table border='2'  width='100%' height="720" style=
+  "border-collapse:collapse"> <!-- add table -->
+
+    <thead> <!-- table head -->
+      <tr> <!-- table row -->
+        <th colspan="4"><h2>Food Items</h2></th> <!-- table heading -->
+      </tr>
+
+    <tr> <!-- table row -->
+      <td colspan="2"><a href="list_fooditems.html">View Food Items</a></td> <!-- table data -->
+      <td colspan="2"><a href="add_fooditem.html">Add Food Item</a></td>
+    </tr>
+    </thead>
+    <tbody> <!-- table body -->
+     <tr> <!-- table row -->
+      <th colspan="2"><h2>Cuisines</h2></th>
+      <th colspan="2"><h2>Categories</h2></th>
+     </tr>
+
+     <tr> <!-- table row -->
+      
+      <td><a href="list_cuisines.html">View All Cuisines</a></td> <!-- table data -->
+      <td><a href="add_cuisine.html">Add Cuisines</a></td>
+      <td><a href="list_categories.html">View Categories</a></td>
+      <td><a href="add_category.html">Add Category</a></td>
+     </tr>
+    
+     <tr> <!-- table row -->
+      <th colspan="2"><h2>Restaurants</h2></th> <!-- table heading -->
+      <th colspan="2"><h2>Users</h2></th>
+     </tr>
+
+     <tr> <!-- table row -->
+      <td><a href="list_restaurants.html">View Restaurants</a></td>
+      <td><a href="add_restaurant.html">Add Restaurant</a></td>
+      <td colspan="2"><a href="#">View Customers</a></td>
+     </tr>
+
+     <tr> <!-- table row -->
+      <th colspan="2"><h2>Orders</h2></th>
+      <th colspan="2"><h2>Restaurant Menu</h2></th>
+     </tr>
+
+     <tr> <!-- table row -->
+      <td colspan="2"><a href="#">View Orders</a></td>
+      <td><a href="list_restaurantmenus.html">View Menu</a></td>
+      <td ><a href="add_restaurantmenu.html">Update Menu</a></td>
+     </tr>
+    
+    </tbody>
+    <!-- tablel footer -->
+    <tfoot>
+
+    </tfoot>
+  </table>
+
+</body>
+</html>

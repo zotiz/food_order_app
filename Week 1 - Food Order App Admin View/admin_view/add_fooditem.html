@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add FoodItem</title>
+  <style>
+    table,td,tr,th{
+      border:none;
+    }
+  </style>
+</head>
+<body>
+  
+  <header> <!-- Add Header Section -->
+    <h1>Add FoodItem</h1>
+  </header>
+
+  <hr>  <!-- horizontal line -->
+
+  <main>  <!-- add main Section -->
+    
+    <form action="" method="get">  <!-- add form -->
+           
+            <table  width="400" height='400'>  <!-- add table -->
+
+             <tr>   <!-- table row -->
+              <th colspan="2">FoodItem Information</th>  <!-- table head -->
+             </tr>
+              
+             
+              <tr>   <!-- table row -->
+                <td>  <!-- table data-->
+                  <label for="food_name">FoodItem Name:</label>
+                </td>
+                <td>
+                  <input type="text" id="food_name" name="food_name" required> 
+                </td>
+              </tr>
+               
+              <tr>  <!-- table row -->
+                <td>   <!-- table data-->
+                  <label for="food_desc">FoodItem Description:</label>
+                </td>
+                <td>
+                  <textarea  id="food_desc" name="food_description" rows="4" cols="16"></textarea>
+                </td>
+              </tr>
+              
+              <tr>  <!-- table row -->
+                <td><label for="available">Available ?</label></td> <!-- table data-->
+                <td><input type="checkbox" id="available" name="available"></td>
+              </tr>
+             
+              <tr>  <!-- table row -->
+               <td><label for="veg">Vegeterian ?</label></td> <!-- table data-->
+                <td><input type="checkbox" id="veg" name="Vegeterian"></td>
+              </tr>
+
+              <tr>  <!-- table row -->
+               <td><label for="category">Category:</label></td> <!-- table data-->
+                <td>
+                  <select name="category" id="category">
+                    <option value="pizza">Pizza</option>
+                    <option value="Pasta">Pasta</option>
+                    <option value="sandwich">Sandwich</option>
+                    <option value="soup">Soup</option>
+                    <option value="chip_salsa">Chips & Salsa</option>
+                  </select>
+                </td>
+              </tr>
+            
+              <tr> <!-- table row -->
+                
+                <td><label for="cuisine">Cuisine:</label></td> <!-- table data -->
+                <td>
+                  <select name="cuisine" id="cuisine">
+                    <option value="italian">Italian</option>
+                    <option value="thai">Thai</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="asian">Asian</option>
+                  </select>
+                </td>
+              </tr>
+              
+              <tr> <!-- table row -->
+                <td> <label for="img">Image URL:</label></td> <!-- table data-->
+                <td><input type="url" id="img" name="image"></td>
+              </tr>
+              
+              <tr> <!-- table row -->
+                <!-- table data & button -->
+                <td><button type="reset" >Discard</button></td>
+                <td><button type="submit">Save</button></td>
+              </tr>
+            </table>
+    </form>
+  </main>
+  <!-- footer -->
+  <footer>
+    <a href="admin_page.html">go back to admin page</a>
+  </footer>
+</body>
+</html>
